@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric Online Voting System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px; 
+            background-color: #f2f2f2;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.5s;
+        }
+
+        .logo {
+            color: #007bff;
+            font-size: 32px;
+            margin-right: 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #007bff;
+        }
+	        h1 {
+            margin: 0;
+        }
+	 header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .candidate {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .candidate img {
+            float: left;
+            margin-right: 10px;
+        }
+        .candidate-info {
+            float: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            margin: 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-vote-yea"></i> VotingSystem
+            </div>
+            <nav class="nav-menu">
+                <a href="voting.html">Home</a>
+                <a href="Election Results1.html">Results</a>
+                <a href="about.html">About</a>
+                <a href="contact1.html">Contact</a>
+            </nav>
+        </div>
+        
+ <header>
+        <h1>Election 2024</h1>
+        <p>Cast your vote for your favorite candidate!</p>
+    </header>
+    <div class="candidate">
+        <img src="candidate1.jpg" alt="Candidate 1">
+        <div class="candidate-info">
+            <h2>Candidate 1</h2>
+            <p>Party: Party A</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="candidate">
+        <img src="candidate2.jpg" alt="Candidate 2">
+        <div class="candidate-info">
+            <h2>Candidate 2</h2>
+            <p>Party: Party B</p>
+            <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <form action="submit_vote.php" method="post">
+        <label>
+            <input type="radio" name="candidate" value="1"> Candidate 1
+        </label>
+        <label>
+            <input type="radio" name="candidate" value="2"> Candidate 2
+        </label>
+        <input type="submit" value="Vote">
+    </form>
+
+        <div class="footer">
+            <p>&copy; 2024 Biometric Online Voting System. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
